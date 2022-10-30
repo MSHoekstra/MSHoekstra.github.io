@@ -1,10 +1,9 @@
-name: Build Application
+name: GitHub Actions Demo
 
-on:
-  push:
-    jobs:
-      Build-Application:
-        runs-on: ubuntu-latest
-        steps:
-          - run: npm ci
-          - run: ng build
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm ci
+      - run: ng build
