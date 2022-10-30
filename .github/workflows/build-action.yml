@@ -1,0 +1,10 @@
+name: Build Application
+
+on:
+  push:
+    jobs:
+      Build-Application:
+        runs-on: ubuntu-latest
+        steps:
+          - run: npm ci
+          - run: ng build
